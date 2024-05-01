@@ -1,0 +1,52 @@
+@import url('layout.css');
+
+.result .result_heading {
+    margin-top: 3%;
+    font-size: 1.75rem;
+    text-align: center;
+    padding: 18px 0;
+    color: blue;
+    font-weight: bold;
+}
+
+.result .prediction_result {
+    text-align: center;
+}
+
+.result .result_subheading {
+    text-align: center;
+    color: black;
+    font-weight: bold;
+} 
+
+.result .result_title {
+    font-size: 18px;
+    color: rgb(160, 22, 176);
+    font-weight: bold;
+}
+
+.result .prediction {
+    text-transform: uppercase;
+    color: green;
+    font-weight: bold;
+}
+
+.resutl img{
+    width: 200px;
+    height: 67px;
+}
+
+
+.result {
+    text-align: center; 
+}
+
+.result_image img {
+margin-top: 1%;
+}
+
+.result a.button {
+
+    margin-top: 20px; 
+}
+

@@ -1,0 +1,7 @@
+@import url('layout.css');
+
+@import url('login_styles.css');
+
+.footer{
+  position: relative;
+}

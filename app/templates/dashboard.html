@@ -1,0 +1,63 @@
+{% extends 'layout.html' %}
+
+{% block title %}Dashboard{% endblock %}
+
+{% block styles %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/dashboard_styles.css') }}">
+
+{% endblock %}
+
+{% block body %}
+<h2>WELCOME TO YOUR DASHBOARD</h2>
+
+<div class="container">
+    <table style="border-collapse: collapse;">
+        <tr>
+            <th style="color: purple; background-color: transparent; border: none;">Farmer Name</th>
+            <td style="background-color: transparent; border: none;">{{ current_user.first_name }}</td>
+        </tr>
+        <tr>
+            <th style="color: purple; background-color: transparent; border: none;">Email</th>
+            <td style="background-color: transparent; border: none;">{{ current_user.email }}</td>
+        </tr>
+    </table>
+    
+
+    <div class="farmining_details">
+        <h4>YOUR FARMING DETAILS!!</h4>
+        <p style="text-align: center; color: blue; font-weight: bold;">
+            These are the crops you have registered here.
+        </p>
+    </div>
+
+    <table>
+        <tr>
+            <th>Crop Name</th>
+            <th>Date</th>
+            <th>View</th>
+            <th>Delete</th>
+        </tr>
+        {% for crop in crop_details %}
+        <tr>
+            <td>{{ crop.crop_name }}</td>
+            <td>{{ crop.date_planted }}</td>
+            <td>
+                <form action="{{ url_for('crop_detail', crop_id=crop.id) }}" method="post" style="display:inline">
+                    <input type="hidden" name="action" value="view">
+                    <button type="submit" class="button">View</button>
+                </form>
+            </td>
+            <td>
+                <form action="{{ url_for('crop_detail', crop_id=crop.id) }}" method="post" style="display:inline">
+                    <input type="hidden" name="action" value="delete">
+                    <button type="submit" class="button delete_button">Delete</button>
+                </form>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+    <a class="add_crop" style="text-decoration: none; color: #008CBA; display: block; font-weight: bold; margin-top: 5PX;" href="{{ url_for('add_crop') }}">Add Crop </a>
+    <br><br>
+</div>
+
+{% endblock %}

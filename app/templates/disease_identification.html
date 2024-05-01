@@ -1,0 +1,52 @@
+{% extends 'layout.html' %}
+
+{%  block title %} Disease Identification {% endblock %}
+{%block styles%} <link rel="stylesheet" type="text/css" href= "{{url_for('static', filename= 'css/disease_identification_styles.css' ) }}"> {% endblock %}
+
+{%block body %}
+
+<div class="left" id="left">
+</div>
+
+<div class="center" id="center">
+  <h2>DISEASE IDENTIFICATION</h2>
+
+  <form class="form" method="post" enctype="multipart/form-data" action="/disease_name" onsubmit="return validateForm()">
+    <span class="form-title">Upload your file</span>
+    <p class="form-paragraph">
+        File should be an image
+      </p>
+     <label for="file-input" class="drop-container">
+    <span class="drop-title">Drop files here</span>
+    or
+    <input type="file"  name="file" id="inputfile" onchange="preview_image(event)">
+  </label>
+  <img class="output" id="output-image" /> <br>
+  <button class="button" type="submit" id="predict-button" disabled>Predict</button>
+  </form>
+
+  <script type="text/javascript">
+      function preview_image(event) {
+          var reader = new FileReader();
+          reader.onload = function () {
+              var output = document.getElementById('output-image');
+              output.src = reader.result;
+          }
+          reader.readAsDataURL(event.target.files[0]);
+
+          // Enable the predict button when an image is selected
+          document.getElementById("predict-button").disabled = false;
+      }
+
+
+      
+  </script>
+</div>
+
+
+<div class="right" id="right">
+
+</div>
+
+
+{% endblock %}

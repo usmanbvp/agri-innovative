@@ -1,0 +1,47 @@
+{% extends 'layout.html' %}
+
+{%  block title %} Crop Recommendation-AgriInnovative {% endblock %}
+{%block styles%} <link rel="stylesheet" type="text/css" href= "{{url_for('static', filename= 'css/crop_recommendation_styles.css' ) }}"> {% endblock %}
+
+{%block body %}
+
+<div class="left" id="left">
+</div> 
+
+<div class="center" id="center">
+
+  <h2>CROP RECOMMENDATION</h2>
+
+  <form action="/crop_name" method="post">
+    <label for="nitrogen">Nitrogen</label>
+    <input class="input_field"  type="number" name="nitrogen" id="nitrogen"  required><br>
+    
+    <label for="phosphorus">Phosphorus</label>
+    <input class="input_field" type="number" name="phosphorus" id="phosphorus" required><br>
+
+    <label for="potassium">Potassium</label>
+    <input class="input_field" type="number" name="potassium" id="potassium"><br>
+    <label for="ph">PH Value</label>
+    <input  class="input_field" type="number" name="ph" id="ph" step="any"><br>
+
+    <label for="rainfall">RainFall</label>
+    <input class="input_field" type="number" name="rainfall" id="rainfall" step="any"><br>
+     
+    <label for="temperature">Temperature</label>
+    <input class="input_field" type="number" name="temperature" id="temperature" step="any"><br>
+
+    <label for="humidity">Humidity</label>
+    <input class="input_field" type="number" name="humidity" id="humidity" step="any"><br>
+
+
+    <input class="button" type="submit" value="predict" class="predict_button">
+  </form>
+
+</div>
+ 
+<div class="right" id="right">
+
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,38 @@
+{% extends 'layout.html' %}
+
+{% block title %}Crop Detail {% endblock %}
+
+{% block styles %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/crop_detail_styles.css') }}">
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    <h2>CROP DETAILS</h2>
+    <form action="" method="post">
+        <label for="crop_name">Crop Name:</label><br>
+        <input class="input_field" type="text" id="crop_name" name="crop_name" value="{{ crop.crop_name }}" required><br>
+        
+        <label for="date_planted">Date Planted:</label><br>
+        <input class="input_field" type="date" id="date_planted" name="date_planted" value="{{ crop.date_planted }}" required><br>
+        
+        <label for="land_details">Land Details:</label><br>
+        <textarea class="input_field" id="land_details" name="land_details" required rows="6" cols="50">{{ crop.land_details }}</textarea><br>
+        
+        <label for="fertilizer_details">Fertilizer Details:</label><br>
+        <textarea class="input_field" id="fertilizer_details" name="fertilizer_details" required rows="6" cols="50">{{ crop.fertilizer_details }}</textarea><br>
+        
+        <label for="pesticides_details">Pesticides Details:</label><br>
+        <textarea class="input_field" id="pesticides_details" name="pesticides_details" required rows="6" cols="50"> {{ crop.pesticides_details }}</textarea><br><br>
+        
+        <label for="other_details">Other Details:</label><br>
+        <textarea class="input_field" id="other_details" name="other_details" required rows="6" cols="50"> {{ crop.other_details }}</textarea><br><br>
+       
+        <input type="hidden" name="action" value="update">
+        <input type="submit" value="Update" class="button">
+    </form>
+    <br>
+    <a href="{{ url_for('dashboard') }}" style=" display: block;
+    text-align: center; text-decoration: none; font-weight: bold;">Back to Crop Details</a>
+</div>
+{% endblock %}

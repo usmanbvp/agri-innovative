@@ -1,0 +1,78 @@
+@import url('layout.css');
+
+.background-image {
+    background-image: url('../images/homepage.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%; /* Ensure the image covers the entire viewport width */
+    position: fixed; /* Fix the image in the viewport */
+    top: 0; /* Position the image at the top of the viewport */
+    left: 0; /* Position the image at the left of the viewport */
+    z-index: -1; /* Move the image behind other content */
+}
+/* Style the heading container */
+.heading-container {
+    position: absolute;
+    top: 45%; /* Adjust the top margin as needed */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/* Style the main heading */
+.main-heading {
+    font-size: 55px;
+    font-weight: 500;
+    color: white;
+    font-style: oblique;
+}
+
+/* Style the sub-heading */
+
+/* Style the sub-sub-heading */
+.sub-sub-heading {
+    font-size: 20px;
+    color: white;
+}
+
+
+
+/* Adjust navbar background */
+.navbar {
+    background-color: transparent !important; /* Make navbar background transparent */
+}
+
+/* Adjust container-fluid background */
+.container-fluid {
+    background-color: transparent !important; /* Make container-fluid background transparent */
+}
+
+
+.navbar ul li:hover .sub-menu{
+
+    display: block;
+    position: absolute;
+    background:transparent;
+  }
+
+  .button a{
+    color: white;
+    text-decoration: none;
+
+  }
+
+  .button{
+    position: absolute;
+    top: 70%;
+    left: 47%;
+    font-size: 18px;
+    padding: 10px 20px;
+    color: white;
+    transform: translate(-50%, -50%);
+    opacity: 0.8;
+  }
+
+  .footer{
+    background-color: transparent;
+  }

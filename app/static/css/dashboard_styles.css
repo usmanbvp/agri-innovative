@@ -1,0 +1,67 @@
+@import url('layout.css');
+
+
+h2{
+    margin-top: 30px;
+    font-size: 1.75rem;
+    text-align: center;
+    padding: 18px 0;
+    color: blue;
+    font-weight: bold;
+} 
+ 
+
+
+h4{
+    text-align: center;
+    color: green;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+
+
+
+
+/*new styles  for the add and update buttons*/
+
+.container {
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.button {
+    margin-right: 10px;
+}
+
+.delete_button {
+    color: red;
+}
+
+.footer{
+    position: relative;
+  }
+
+

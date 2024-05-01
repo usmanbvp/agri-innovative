@@ -1,0 +1,86 @@
+@import url('layout.css');
+
+
+.left{
+    width: 33.33%;
+    float: left;
+    height: 700px;
+    background-image: url('../images/image1.jpeg');
+    background-size: cover;
+    display: block;
+}
+
+.right{
+    width: 33.33%;
+    float: right;
+    height: 700px;
+    background-image: url('../images/image1.jpeg');
+    background-size: cover;
+    display: block;
+}
+
+.center{
+    background-color:transparent;
+    width: 33.33%;
+    display: inline-block;
+    height: 700px;
+
+}
+
+.center h2{
+  font-size: 1.75rem;
+  text-align: center;
+  padding: 18px 0;
+  color: blue;
+  font-weight: bold;
+}
+
+
+.center label{
+   display: inline-block;
+   width: 150px; 
+   margin-top: 5%;
+   margin-left: 10%;
+   font-weight: bold;
+}
+
+.center .form_group label{
+    font-weight: unset;
+}
+
+.center .input_field{
+        background-color: lightgray;
+        border-radius: 5px;
+        padding: 5px;
+
+      }
+      .center .input_field:focus {
+        background-color: lightblue; 
+    }
+.center .button{
+    margin-top: 5%;
+    margin-left: 40%;
+    text-align: center;
+
+}
+
+
+/* Media query for mobile screens */
+@media screen and (max-width: 767px) {
+
+    .center {
+      display: inline;
+      align-items: center;
+    }
+    
+      .left, .right {
+        display: none !important;
+      }
+    
+      .left, .right {
+        width: 0%;
+      }
+      
+      
+    }
+    

@@ -1,0 +1,24 @@
+{% extends 'layout.html' %}
+
+{%  block title %} Fertilizer Recommendation {% endblock %}
+{%block styles%}
+<link rel="stylesheet" type="text/css" href= "{{url_for('static', filename= 'css/fertilizer_recommendation_result_styles.css' ) }}">
+{% endblock %}
+
+{%block body %}
+<div class="result">
+    <h2 class="result_heading"> FERTILIZER RECOMMENDATION</h2><br>
+    <p class="result_subheading"><i class="fa-solid fa-leaf" style="color: #63E6BE;"></i>  Based on the values you have entered in the form we recommend you to use this fertilizer in your land!!!   <i class="fa-solid fa-leaf" style="color: #63E6BE;"></i></p>
+    <p class="prediction_result"><SPAN class="result_title">FERTILIZER NAME :  </SPAN> <SPAN class="prediction">{{ recommended }}</SPAN>   (To know More click the image.)</p>
+    
+    <div class="result_image">
+    <a href="{{image_url}}" target="_blank"><img src="data:image/jpeg;base64,{{ image_data }}" alt="Image"></a>
+    
+    </div>
+         <div class="try_again">
+        <a class="button" href="{{ url_for('fertilizer_recommendation') }}"><b>Try Again</b></a>
+    </div>
+    </div>
+    
+    
+{% endblock %}

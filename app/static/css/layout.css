@@ -1,0 +1,266 @@
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+
+@media (min-width: 992px)
+{.navbar-expand-lg .navbar-collapse 
+{
+   
+    flex-direction: row-reverse;
+}
+
+.nav-link
+{
+    margin:9px;
+}
+
+
+}
+
+
+
+
+.nav-link:is(:link, :active, :visited) {
+  display: inline-block;
+  position: relative;
+  color: white;
+}
+
+.nav-link:is(:link, :active, :visited).active {
+  color: red;
+}
+
+
+.nav-link:hover
+{
+    color: #1db5c3;
+}
+
+.container-fluid
+{
+    background-color:#4395a3;
+
+}
+.navbar.navbar-expand-lg.bg-body-tertiary
+{
+    padding-top: 0;
+    padding-bottom:0;
+}
+.navbar-brand
+{
+    color: white;
+    transition: 0.5s;
+}
+.navbar-brand:hover
+{
+    color: #c82da4;
+    transition: 0.5s;
+}
+
+body
+{
+    font-family: "Poppins", sans-serif;
+    background-color: white;
+}
+
+.desc
+{
+    color: white;
+    font-size: small;
+    width: 100%;
+    padding: 2% 3% 3% 3%;
+    text-align: justify;   
+}
+
+
+/*adding icons to navbar tabes */
+
+/*to give gap between icons and nav tab name */
+.nav-item .fa{
+  margin-right: 6px;
+  margin-left: 6px;
+}
+
+
+.sub-menu{
+  display: none;
+}
+
+.navbar ul li:hover .sub-menu{
+
+  display: block;
+  position: absolute;
+  background:#d1dcde ;
+}
+
+.nav-item{
+  list-style: none;
+}
+
+
+.sub-menu-nav-link{
+  color:#000000;
+  text-decoration: none;
+
+}
+
+.sub-menu-nav-link :hover{
+  width: 150px;
+  padding:10px;
+  background: transparent;
+  color:#1db5c3;
+  border-radius: 0;
+  text-align: left;
+
+}
+
+
+
+.button{
+  appearance: none;
+  background-color: rgb(46, 134, 228);
+  border: 1px solid rgba(27, 31, 35, .15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 6px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.button:focus:not(:focus-visible):not(.focus-visible) {
+  box-shadow: none;
+  outline: none;
+}
+
+.button:hover {
+  background-color: #bd1a1a;
+}
+
+.button:focus {
+  box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
+  outline: none;
+}
+
+.button:disabled {
+  background-color: #94d3a2;
+  border-color: rgba(27, 31, 35, .1);
+  color: rgba(255, 255, 255, .8);
+  cursor: default;
+}
+
+.button:active {
+  background-color: #298e46;
+  box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
+}
+
+
+.footer {
+  position: fixed; /* Change position to fixed */
+  bottom: 0; /* Position at the bottom of the viewport */
+  width: 100%;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  font-size: 14px;
+  clear: both; /* Added clear:both to ensure content doesn't float under the footer */
+}
+
+.footer .container {
+  max-width: 1200px; /* Added max-width for better control */
+  margin: 0 auto; /* Center align the container */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer .container .row {
+  width: 100%;
+}
+
+.footer .container .row p {
+  margin: 0;
+}
+
+.footer .container .row p a {
+  color: white;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.footer .container .row p a:hover {
+  color: #1db5c3;
+}
+
+.logo {
+  height: 30px;
+}
+
+.logo-text {
+  margin-left: 10px;
+}
+
+.footer .col-auto {
+  margin-right: 20px; /* Increase the right margin */
+}
+
+.footer .col-auto.ml-auto {
+  margin-left: 460px; /* Increase the left margin */
+}
+
+@media (max-width: 767px) {
+  .footer .container {
+    flex-direction: column; /* Stack items vertically on small screens */
+    align-items: center; /* Center align items on small screens */
+  }
+  
+  .footer .container .row {
+    width: auto; /* Allow rows to adjust their width as needed */
+    margin-bottom: 10px; /* Add some spacing between rows */
+  }
+
+  .footer .row.align-items-center {
+    flex-direction: column;
+  }
+
+  .footer .col-auto {
+    display: block;
+    margin-bottom: 10px; 
+    text-align: center;
+  }
+
+  .footer .col-auto.ml-auto {
+    display: block;
+    margin-left: 0;
+    text-align: center;
+  }
+  .logo, .logo-text {
+    display: none;
+
+  }
+}
+
+
+.flash-messages-container {
+  width: 80%; /* Adjust the width as needed */
+  margin: 0 auto; /* Center the container horizontally */
+}

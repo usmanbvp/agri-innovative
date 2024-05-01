@@ -1,0 +1,155 @@
+@import url('layout.css');
+
+h2{
+    font-size: 1.75rem;
+text-align: center;
+padding: 18px 0;
+color: blue;
+font-weight: bold;
+}
+
+
+p {
+    font-family: "Roboto", sans-serif;
+    color: #577592;
+    line-height: 1.4rem;
+}
+
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+.search-bar {
+    height: 32px;
+    gap: 8px;
+    margin-left: 75%;
+}
+
+.news-input {
+    width: 200px;
+    height: 100%;
+    padding-inline: 12px;
+    border-radius: 4px;
+    border: 2px solid #bbd0e2;
+    font-family: "Roboto", sans-serif;
+}
+
+.search-button {
+    background-color: #2294ed;
+    color: white;
+    padding: 8px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+}
+
+.search-button:hover {
+    background-color: #1d69a3;
+}
+
+main {
+    padding-block: 20px;
+    margin-top: 15px;
+}
+
+.cards-container {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    align-items: start;
+}
+
+.card {
+    width: 360px;
+    height: 400px;
+    box-shadow: 0 0 4px #2b2d2e;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: white;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 1px 1px 8px #d4ecff;
+    background-color: #f9fdff;
+    transform: translateY(-2px);
+}
+
+.card-header img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 12px;
+}
+
+.news-source {
+    margin-block: 12px;
+}
+
+
+
+
+
+
+   
+   
+   
+
+   
+   .group {
+ display: flex;
+ line-height: 28px;
+ align-items: center;
+ position: relative;
+ max-width: 190px;
+}
+
+.input {
+ width: 100%;
+ height: 40px;
+ line-height: 28px;
+ padding: 0 1rem;
+ padding-left: 2.5rem;
+ border: 2px solid transparent;
+ border-radius: 8px;
+ outline: none;
+ background-color: #f3f3f4;
+ color: #0d0c22;
+ transition: .3s ease;
+}
+
+.input::placeholder {
+ color: #9e9ea7;
+}
+
+.input:focus, input:hover {
+ outline: none;
+ border-color: rgba(234,76,137,0.4);
+ background-color: #fff;
+ box-shadow: 0 0 0 4px rgb(234 76 137 / 10%);
+}
+
+.icon {
+ position: absolute;
+ left: 1rem;
+ fill: #9e9ea7;
+ width: 1rem;
+ height: 1rem;
+}
+
+
+.footer{
+    position: relative;
+}
+
+

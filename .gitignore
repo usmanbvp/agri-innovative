@@ -1,0 +1,5 @@
+virtual-env/
+data/
+.ipynb_checkpoints/
+plant_disease_identification.ipynb/
+disease_identification_model.pth/

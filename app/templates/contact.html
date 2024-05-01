@@ -1,0 +1,80 @@
+{% extends 'layout.html' %}
+
+{% block title %} Contact  {% endblock %}
+
+{% block styles %} <link rel="stylesheet" href="{{url_for('static', filename = 'css/contact_styles.css')}}"> {% endblock %}
+
+
+{%  block body %} 
+<section>
+    <div class="container">
+        <div class="contactInfo">
+            <div>
+                <h2>Contact Info</h2>
+                <ul class="info">
+                    <li>
+                        <span><a href="https://maps.app.goo.gl/3ZvXjeX5C4mGKqVw8"><img src="{{url_for('static', filename='images/contact/location.png')}}" alt="location"> </a>  </span>
+                        <span>
+                           JNTUA College of Engineering Kalikiri
+                        </span>
+                    </li>
+                    <li>
+                        <span><img src="{{ url_for('static', filename='images/contact/mail.png')}}" alt="Email"></span>
+                        <span>agriinnovative@gmail.com</span>
+                    </li>
+                    <li>
+                        <span><img src="{{url_for('static', filename='images/contact/call.png')}}" alt="Mobile"></span>
+                        <span>9481-111-000</span>
+                    </li>
+                </ul>
+            </div>
+            <ul class="socialIcon">
+                <li><a href="https://twitter.com/usman_bvp"><img src="{{url_for('static', filename='images/contact/twitter.png')}}" alt="Twitter"></a></li>
+                <li><a href="https://www.instagram.com/usman_bvp/"><img src="{{url_for('static', filename='images/contact/instagram.png')}}" alt="instagram"></a></li>
+                <li><a href="https://github.com/usmanbvp"><img src="{{url_for('static', filename='images/contact/github.png')}}" alt="Github"></a></li>
+                <li><a href="https://www.linkedin.com/in/usmanbvp/"><img src="{{url_for('static', filename='images/contact/linkedin.png')}}" alt="linkedin"></a></li>
+            </ul>
+        </div>
+
+        <div class="contactForm">
+            <h2>Send a Message</h2> 
+            
+            <div class="formBox">
+                <div class="inputBox w50">
+                    <input type="text" name="first-name" id="first-name" required>
+                    <span>First Name</span>
+                </div>
+                <div class="inputBox w50">
+                    <input type="text" name="last-name" id="last-name" required>
+                    <span>Last Name</span>
+                </div>
+                <div class="inputBox w50">
+                    <input type="email" name="email" id="mailid" required>
+                    <span>Email</span>
+                </div>
+                <div class="inputBox w50">
+                    <input type="text" name="number" id="number" required>
+                     <span>Mobile Number</span>
+                </div>
+                <div class="inputBox w100">
+                    <textarea name="message" id="message" required></textarea>
+                    <span>Write Your Message Here.</span>
+                </div>
+                <div class="inputBox w100">
+                    <input type="submit" value="Submit"  onclick="Send(); ">
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+    {% block scripts %}
+
+
+    <script src=" {{url_for('static', filename='scripts/contact.js')}}"></script>
+    
+    {% endblock  %}        
+    
+
+{% endblock %}

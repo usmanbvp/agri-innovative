@@ -1,0 +1,67 @@
+{% extends 'layout.html' %}
+
+{% block title %} Check Weather  {% endblock %}
+
+{% block styles %}  <link rel="stylesheet"  type="text/css" href="{{ url_for('static', filename='css/check_weather_styles.css') }}" > {% endblock %}
+
+{% block body %}
+
+    <h2>WEATHER REPORT</h2>
+    <div class="container">
+      <div class="weather-input">
+        <h3>Enter City Name</h3>
+        <input class="city-input" type="text" placeholder="E.g. Kalikiri">
+        <button class="search-btn button">Search</button>
+        <div class="separator"></div>
+        <button class="location-btn button">Use Current Location</button>
+      </div>
+      <div class="weather-data">
+        <div class="current-weather">
+          <div class="details">
+            <h2>_______ ( ______ )</h2>
+            <h6>Temperature: __°C</h6>
+            <h6>Wind: __ M/S</h6>
+            <h6>Humidity: __%</h6>
+          </div>
+        </div>
+        <div class="days-forecast">
+          <h2>5-Day Forecast</h2>
+          <ul class="weather-cards">
+            <li class="card">
+              <h3>( ______ )</h3>
+              <h6>Temp: __C</h6>
+              <h6>Wind: __ M/S</h6>
+              <h6>Humidity: __%</h6>
+            </li>
+            <li class="card">
+              <h3>( ______ )</h3>
+              <h6>Temp: __C</h6>
+              <h6>Wind: __ M/S</h6>
+              <h6>Humidity: __%</h6>
+            </li>
+            <li class="card">
+              <h3>( ______ )</h3>
+              <h6>Temp: __C</h6>
+              <h6>Wind: __ M/S</h6>
+              <h6>Humidity: __%</h6>
+            </li>
+            <li class="card">
+              <h3>( ______ )</h3>
+              <h6>Temp: __C</h6>
+              <h6>Wind: __ M/S</h6>
+              <h6>Humidity: __%</h6>
+            </li>
+            <li class="card">
+              <h3>( ______ )</h3>
+              <h6>Temp: __C</h6>
+              <h6>Wind: __ M/S</h6>
+              <h6>Humidity: __%</h6>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    {% endblock %}
+
+    {% block scripts %} <script src="{{ url_for('static', filename = 'scripts/check_weather.js') }}" defer></script>{% endblock %}

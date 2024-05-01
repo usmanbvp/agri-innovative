@@ -1,0 +1,36 @@
+@import url('layout.css');
+
+@import url('fertilizer_recommendation_result_styles.css');
+
+
+.result .result_heading {
+    margin-top: 1%;
+    font-size: 1.75rem;
+    text-align: center;
+    padding: 18px 0;
+    color: blue;
+    font-weight: bold;
+}
+.healthy_crop_result{
+    color: green;
+    font-weight: bold;
+}
+.disease_cause {
+    color: #c9734e;
+
+}
+.result_content {
+    list-style-type: none;
+    padding-left: 10px;
+    color: #c9734e;
+    font-weight: bold;
+}
+
+.try_again{
+    text-align: center;
+}
+
+.footer {
+    position:relative;
+}
+

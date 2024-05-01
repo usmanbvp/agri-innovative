@@ -1,0 +1,44 @@
+@import url('layout.css');
+
+h2{
+  font-size: 1.75rem;
+  text-align: center;
+  padding: 18px 0;
+  color: blue;
+  font-weight: bold;
+}
+
+
+form{
+    text-align: center;
+}
+label{
+    display: inline-block;
+ 
+     font-weight: bold;
+ }
+ .input_field{
+  width: 500px;
+  background-color: lightgray;
+  border-radius: 5px;
+  padding: 5px;
+
+}
+.input_field:focus {
+  background-color: lightblue; 
+}
+
+
+@media screen and (max-width: 767px) {
+
+    .input_field{
+        width: 350px;
+      }
+
+          
+        }
+        
+
+.footer{
+  position: relative;
+}

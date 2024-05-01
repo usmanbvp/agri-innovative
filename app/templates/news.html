@@ -1,0 +1,41 @@
+{% extends 'layout.html' %}
+
+{% block title %} News  {% endblock %}
+
+{% block styles %}  
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/news_styles.css') }}">
+{% endblock %}
+
+{% block body %}
+<div class="container flex-center">
+      <div class="marquee-container">
+                <h2>GET LATEST FARMING  NEWS HERE!</h2>
+        </div>
+    <div class="search-bar flex">
+        <input id="search-text" type="text" class="news-input" placeholder="e.g. Agriculture">
+        <button id="search-button" class="search-button" onclick="clearSearchBox()" >Search</button>
+    </div>    
+</div>
+
+
+
+<main>
+    <div class="cards-container container flex" id="cards-container">
+    </div>
+</main>
+
+<template id="template-news-card">
+    <div class="card">
+        <div class="card-header">
+            <img src="https://via.placeholder.com/400x200" alt="news-image" id="news-img">
+        </div>
+        <div class="card-content">
+            <h3 id="news-title">This is the Title</h3>
+            <h6 class="news-source" id="news-source">End Gadget 26/08/2023</h6>
+            <p class="news-desc" id="news-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae saepe quis voluptatum quisquam vitae doloremque facilis molestias quae ratione cumque!</p>
+        </div>
+    </div>
+</template>
+
+<script src="{{url_for('static', filename = 'scripts/news.js')}}"></script>
+{% endblock %}

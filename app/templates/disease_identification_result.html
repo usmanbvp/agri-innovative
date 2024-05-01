@@ -1,0 +1,45 @@
+{% extends 'layout.html' %} 
+
+{% block title %} Disease Identification {% endblock %}
+{% block styles %} <link rel="stylesheet" href="{{url_for('static', filename='css/disease_identification_result_styles.css')}}"> {% endblock %}
+
+ {% block body %}
+ <div class="result">
+  <h2 class="result_heading"> DISEASE IDENTIFICATION RESULT</h2><br>
+
+  {% if disease_name == "Healthy" %}
+  <p class="healthy_crop_result">THE PLANT IS HEALTHY AND DOES NOT SHOW ANY SIGNS OF DISEASE.</p>
+
+  {% else %}
+  <p class="result_subheading"><i class="fa-solid fa-leaf" style="color: #63E6BE;"></i>  Your Crop caught by the below mentioned disease!!!   <i class="fa-solid fa-leaf" style="color: #63E6BE;"></i></p>
+  <p class="prediction_result"><SPAN class="result_title">DISEASE NAME :  </SPAN> <SPAN class="prediction">{{ disease_name }}</SPAN>  </p>
+  <p class="result_title"> CAUSE OF THE DISEASE <br>
+    <ul class="result_content">
+      {% for method in disease_cause %}
+      <li>{{ method }}</li>
+      {% endfor %}
+  </ul>
+
+  </p> 
+
+  <P class="result_title"> NATURAL PREVENTION METHODS <br>
+    <ul class="result_content">
+      {% for method in natural_methods %}
+      <li>{{ method }}</li>
+      {% endfor %}
+  </ul>
+  </P>
+  <P class="result_title"> CHEMICAL PREVENTION METHODS <br>
+    <ul class="result_content">
+      {% for method in chemical_methods %}
+      <li>{{ method }}</li>
+      {% endfor %}
+  </ul>
+  </P>
+{% endif %}
+
+  </div>
+  <div class="try_again">
+    <a class="button" href="{{ url_for('disease_identification') }}"><b>Try Again</b></a>
+</div>
+{% endblock %}

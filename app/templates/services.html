@@ -1,0 +1,60 @@
+{% extends 'layout.html' %}
+
+{% block title %} Services  {% endblock %}
+
+{% block styles %}  <link rel="stylesheet"  type="text/css" href="{{ url_for('static', filename='css/services_styles.css') }}" > {% endblock %}
+
+
+{% block body %} 
+
+      <h2 class="heading">SERVICES WE PROVIDE</h2>
+      <br>
+
+      <div class="card_container">
+    <div class="card">
+        <div class="card-image-container">
+            <img src="{{url_for('static', filename ='images/services/crop_recommendation.png')}}" alt="Image Description" class="card-image">
+        </div>
+        <p class="card-title">CROP RECOMMENDATION</p>
+        <p class="card-link">
+         <a href="{{url_for('crop_recommendation')}}">Click Here</a>
+        </p>
+    </div>
+
+    <div class="card">
+        <div class="card-image-container">
+            <img src="{{url_for('static', filename ='images/services/fertilizer_recommendation.jpg')}}" alt="Image Description" class="card-image">
+        </div>
+        <p class="card-title">FERTILIZER RECOMMENDATION</p>
+        <p class="card-link">
+         <a href="{{url_for('fertilizer_recommendation')}}">Click Here</a>
+        </p>
+    </div>
+
+    <div class="card">
+        <div class="card-image-container">
+            <img src="{{url_for('static', filename ='images/services/disease_identification.jpg')}}" alt="Image Description" class="card-image">
+        </div>
+        <p class="card-title">DISEASE IDENTIFICATION</p>
+        <p class="card-link">
+         <a href="{{url_for('disease_identification')}}">Click Here</a>
+        </p>
+    </div>
+
+    <div class="card">
+        <div class="card-image-container">
+            <img src="{{url_for('static', filename ='images/services/weather_report.jpg')}}" alt="Image Description" class="card-image">
+        </div>
+        <p class="card-title">CHECK WEATHER</p>
+        <p class="card-link">
+         <a href="{{url_for('check_weather')}}">Click Here</a>
+        </p>
+    </div>
+
+</div>
+
+
+<p class="desc"> <br><i class="fa-solid fa-leaf" style="color: #63E6BE;"></i>Access our suite of agricultural services to optimize your farming practices. <br>
+      Empower your agricultural journey with advanced technology and comprehensive solutions.<i class="fa-solid fa-leaf" style="color: #63E6BE;"></i></p>
+
+    {% endblock %}

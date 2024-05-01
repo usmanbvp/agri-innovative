@@ -1,0 +1,10 @@
+@import url('layout.css');
+@import url('crop_recommendation_result_styles.css');
+
+.result_image{
+margin-top: 0%;
+}
+
+.footer{
+    position:relative;
+}
