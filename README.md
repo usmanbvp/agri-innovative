@@ -52,11 +52,12 @@ The structure of project files will look like this :
 
 ## 👨🏻‍💻Technologies Used 
  <ul>
- <li> <b>Front End: </b>  HTML, CSS, Java Script</li>
- <li> <b> Back End: </b> Flask </li>
-<li> <b> Python Libraries : </b> Numpy, Pandas, Matplotlib, Seaborn </li>
-<li> <b> ML and DL Libraries : </b> Scikit-Learn, TensorFlow </li>
-<li><b> Database:</b> MySQL </li>
+ <li> <b>Front End: </b>   HTML, CSS, Java Script</li>
+ <li> <b> Back End: </b>  Flask </li>
+<li> <b> Python Libraries : </b>  Numpy, Pandas, Matplotlib, Seaborn </li>
+<li> <b> ML and DL Libraries : </b>  Scikit-Learn, TensorFlow </li>
+<li><b> Database:</b> 
+MySQL </li>
  </ul>
 
 ## ⏳ Dataset 
@@ -166,7 +167,7 @@ python app.py
 ## ▶️Demo of the Project
 The AgriInnovative project website mainly consists of six pages. They are
 <ul>
-<li> ✔️Home</li>
+<li> Home</li>
 <li> Dashboard</li>
 <li> Services</li>
 <li> News</li>
@@ -177,7 +178,7 @@ The AgriInnovative project website mainly consists of six pages. They are
 Let's see the demo of the project.
 
 
-<img src ="" alt="demo"/>
+<img src ="app/static/images/readme/" alt="demo"/>
 
 
 
