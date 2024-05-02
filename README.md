@@ -161,9 +161,14 @@ After that,run the following code to upload the results related info into those 
 
 <b>disease_details</b>: [run_this_code](app/utils/uploadexcel.py)
 
-5. Finally run the following command to run the project locally:
+5. Finally execute the following command to run the project locally:
 ```
 python app.py
+```
+6.After executing app.py, access the provided localhost URL to utilize the project directly in your web browser on your local machine.
+```
+http://127.0.0.1:5000/
+
 ```
 
 ## ▶️Demo of the Project
