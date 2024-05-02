@@ -111,9 +111,9 @@ Download the Disease Identification dataset for custom training <a href="https:/
 
 
 ## 📒Notebooks
-- <a href="#"> Fertilizer Recommendation </a>
-- <a href="#"> Crop Recommendation </a>
-- <a href="#"> Disease Identification </a>
+- <a href="https://github.com/usmanbvp/agri-innovative/blob/main/notebooks/fertilizer_recommendation.ipynb"> Fertilizer Recommendation </a>
+- <a href="https://github.com/usmanbvp/agri-innovative/blob/main/notebooks/crop_recommendation.ipynb"> Crop Recommendation </a>
+- <a href="https://github.com/usmanbvp/agri-innovative/blob/main/notebooks/plant_disease_identification.ipynb"> Disease Identification </a>
 
 ## 🛠️How to Install and Run this Project?
 
