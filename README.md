@@ -83,7 +83,7 @@ This dataset contains essential parameters for fertilizer recommendation models,
 
     Soil Type: Type of the soil
 
- Download the fertilizer Recommendation dataset for  custom training <a href="data/raw/fertilizer_recommendation.csv">here</a>
+ Download the fertilizer Recommendation dataset for  custom training <a href="https://github.com/usmanbvp/agri-innovative/blob/main/data/raw/fertilizer_recommendation.csv">here</a>
 
 ### 2.Crop  Recommendation Dataset
 This dataset serves as a valuable resource for crop recommendation systems, aiding in the selection of optimal crops based on various soil and environmental factors. The dataset comprises the following essential fields:
@@ -102,7 +102,7 @@ This dataset serves as a valuable resource for crop recommendation systems, aidi
 
     Rainfall: Rainfall in millimeters
 
-Download the Crop Recommendation dataset for custom training <a href="data/raw/crop_recommendation.csv">here</a>
+Download the Crop Recommendation dataset for custom training <a href="https://github.com/usmanbvp/agri-innovative/blob/main/data/raw/crop_recommendation.csv">here</a>
 
  ### 3.Disease Identification Dataset
 This dataset is recreated using offline augmentation from the original dataset. This dataset consists of about 87K rgb images of healthy and diseased crop leaves which is categorized into 38 different classes. The total dataset is divided into 80/20 ratio of training and validation set preserving the directory structure. A directory containing 33 test images is created for prediction purpose.
@@ -178,7 +178,7 @@ The AgriInnovative project website mainly consists of six pages. They are
 Let's see the demo of the project.
 
 
-<img src ="app/static/images/readme/" alt="demo"/>
+<img src ="app/static/images/readme/project_demo.gif" alt="demo"/>
 
 
 
