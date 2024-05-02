@@ -22,6 +22,8 @@
 
 - At the core of our initiative lies the recognition of agriculture's fundamental role in driving economic advancement. By leveraging the latest developments in computer science, particularly in areas like Machine Learning and Deep Learning, we strive to revolutionize age-old farming practices.
 
+<img src ="app/static/images/readme/project_demo.gif" alt="demo"/>
+
 ## 🗂️Project Structure
 
 The project is organized into the following directories and files:
